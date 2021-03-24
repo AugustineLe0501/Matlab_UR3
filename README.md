@@ -1,6 +1,6 @@
 # This is the wrapper to control UR3 by Matlab in Robotics subject
 
-Step 1: Download the "Wrapper.m" file and add it into your Assignment directory.
+Step 1: Download these files and add into your Assignment directory.
 
 Step 2: Open matlab and check your trajectory in simulation beforeing send it through the robot.
 
@@ -17,3 +17,6 @@ Step 6: Send a trajectory.
 * Command into Matlab terminal: "wrapper.SendJointsPosition(q);"
 * Where "q" is a trajectory matrix(n,6).
 * Note: the first joints position must be near the current joint position of the robot.
+
+Test the package:
+* Do Step 3 and 4 then run Test.m file on Matlab
