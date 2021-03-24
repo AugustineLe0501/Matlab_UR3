@@ -14,7 +14,7 @@ Step 5: Initialize Wrapper.
 * Command into Matlab terminal: "wrapper = Wrapper();" 
 
 Step 6: Send a trajectory.
-* Command into Matlab terminal: "wrapper.SendJointsPosition(q);"
+* Command into Matlab terminal: "wrapper.SendJointPosition(q);"
 * Where "q" is a trajectory matrix(n,6).
 * Note: the first joints position must be near the current joint position of the robot. Command to Matlab terminal "wrapper.GetJointsPosition();" to get the current joint position of the robot.
 
