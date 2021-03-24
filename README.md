@@ -19,4 +19,5 @@ Step 6: Send a trajectory.
 * Note: the first joints position must be near the current joint position of the robot.
 
 Test the package:
+* Use the teach pendant to change the joints position into (69.3, -143.9, -95.9, -29.8, -87.2, 0) degree
 * Do Step 3 and 4 then run Test.m file on Matlab
