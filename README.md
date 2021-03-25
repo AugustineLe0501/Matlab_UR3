@@ -11,7 +11,8 @@ Step 4: Open External Control on teach pendant.
 * Hit the "play button" at the bottom left of the teach tendant.
 
 Step 5: Initialize Wrapper.
-* Command into Matlab terminal: "wrapper = Wrapper();" 
+* Command into Matlab terminal: "wrapper = Wrapper('192.168.X.XXX');"
+* Where "192.168.X.XXX" is the IP address of the Raspery Pi. 
 
 Step 6: Set the total time to run the traijectory
 * Command into Matlab terminal: "wrapper.SetToTalTime(time);"
