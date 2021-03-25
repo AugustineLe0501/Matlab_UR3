@@ -45,7 +45,6 @@ classdef Wrapper < handle
             goal.GoalTimeTolerance = rosduration(self.timeTolerance);
             goal.Trajectory.JointNames = self.jointName;
             goal.Trajectory.Header.Seq = self.count;
-            goal.Trajectory.Header.Stamp = rostime('Now','system');
             
             for i=1:1:size(jointPosition,1)
                 jointSend = rosmessage('trajectory_msgs/JointTrajectoryPoint');
@@ -55,7 +54,8 @@ classdef Wrapper < handle
                 
                 goal.Trajectory.Points = [goal.Trajectory.Points; jointSend];
             end
-            
+                        
+            goal.Trajectory.Header.Stamp = rostime('Now','system');
             sendGoal(self.client,goal);
             self.count = self.count+1;
         end
