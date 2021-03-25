@@ -13,11 +13,16 @@ Step 4: Open External Control on teach pendant.
 Step 5: Initialize Wrapper.
 * Command into Matlab terminal: "wrapper = Wrapper();" 
 
+Step 6: Set the total time to run the traijectory
+* Command into Matlab terminal: "wrapper.SetToTalTime(time);"
+* Where "time" is in second.
+* The default time is 10 seconds
+
 Step 6: Send a trajectory.
 * Command into Matlab terminal: "wrapper.SendJointsPosition(q);"
 * Where "q" is a trajectory matrix(n,6). 
-* n should be larger than 50.
-* Note: the first joints position must be near the current joint position of the robot. Command to Matlab terminal "wrapper.GetJointsPosition();" to get the current joint position of the robot.
+* Note: the first joints position must be near the current joint position of the robot.
+* Command to Matlab terminal "wrapper.GetJointsPosition();" to get the current joint position of the robot.
 
 Test the package:
 * Use the teach pendant to change the joints position into (69.3, -143.9, -95.9, -29.8, -87.2, 0) degree
