@@ -2,7 +2,7 @@
 
 Step 1: Download these files and add into your Assignment directory.
 
-Step 2: Open matlab and check your trajectory in simulation beforeing send it through the robot.
+Step 2: Open matlab and check your trajectory in simulation before sending it through the robot.
 
 Step 3: Connect your computer with Router.
 
