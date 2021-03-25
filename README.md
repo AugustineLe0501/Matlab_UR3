@@ -11,8 +11,8 @@ Step 4: Open External Control on teach pendant.
 * Hit the "play button" at the bottom left of the teach tendant.
 
 Step 5: Initialize Wrapper.
-* Command into Matlab terminal: "wrapper = Wrapper('192.168.X.XXX');"
-* Where "192.168.X.XXX" is the IP address of the Raspery Pi. 
+* Command into Matlab terminal: "wrapper = Wrapper();"
+* You will be asked to input the Raspery Pi then type "192.168.X.XXX"
 
 Step 6: Set the total time to run the traijectory
 * Command into Matlab terminal: "wrapper.SetToTalTime(time);"
@@ -28,4 +28,4 @@ Step 7: Send a trajectory.
 Test the package:
 * Use the teach pendant to change the joints position into (69.3, -143.9, -95.9, -29.8, -87.2, 0) degree
 * Do Step 3 and 4 then run Test.m file on Matlab
-* Input the IP address of Raspery Pi on command Windows:" '192.168.X.XXX' ".
+* Input the IP address of Raspery Pi on command Windows:"192.168.X.XXX".
