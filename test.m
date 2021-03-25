@@ -8,5 +8,5 @@ for i= 1:30:1850
 end
 
 wrapper = Wrapper();
-wrapper.setTotalTime(15);
+wrapper.SetTotalTime(15);
 wrapper.SendJointsPosition(qMatrix);
