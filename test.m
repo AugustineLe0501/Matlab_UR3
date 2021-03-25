@@ -7,6 +7,8 @@ for i= 1:10:1850
     qMatrix = [qMatrix;q(i,:)];
 end
 
-wrapper = Wrapper('192.168.x.xxx');
+ip = input('What is the IP address of the Pi: ');
+
+wrapper = Wrapper(ip);
 wrapper.SetTotalTime(15);
 wrapper.SendJointsPosition(qMatrix);
