@@ -18,7 +18,7 @@ Step 6: Set the total time to run the traijectory
 * Where "time" is in second.
 * The default time is 10 seconds
 
-Step 6: Send a trajectory.
+Step 7: Send a trajectory.
 * Command into Matlab terminal: "wrapper.SendJointsPosition(q);"
 * Where "q" is a trajectory matrix(n,6). 
 * Note: the first joints position must be near the current joint position of the robot.
