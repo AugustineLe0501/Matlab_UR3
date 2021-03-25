@@ -28,3 +28,4 @@ Step 7: Send a trajectory.
 Test the package:
 * Use the teach pendant to change the joints position into (69.3, -143.9, -95.9, -29.8, -87.2, 0) degree
 * Do Step 3 and 4 then run Test.m file on Matlab
+* Input the IP address of Raspery Pi on command Windows:" '192.168.X.XXX' ".
