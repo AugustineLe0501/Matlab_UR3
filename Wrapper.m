@@ -54,7 +54,7 @@ classdef Wrapper < handle
         end
         
         % Set total time to execute the trajectory
-        function setTotalTime(self,time)
+        function SetTotalTime(self,time)
             self.totalTime = time;
         end
         
